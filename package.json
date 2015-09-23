@@ -1,0 +1,28 @@
+{
+  "name": "startingpoints-lib-services",
+  "version": "0.1.1",
+  "description": "StartingPoints Services Library",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.11.0",
+    "gulp-preprocess": "orionstein/gulp-preprocess",
+    "gulp-angular-filesort": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "run-sequence": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:startingpoints-core/startingpoints-lib-services.git"
+  },
+  "author": "Kyle Althoff",
+  "license": "ISC"
+}
