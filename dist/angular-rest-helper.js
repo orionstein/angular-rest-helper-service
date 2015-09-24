@@ -1,6 +1,6 @@
 (function() {
 
-  angular.module('angularRestHelper');
+  angular.module('angularRestHelper', []);
 
   angular
     .module('angularRestHelper')
