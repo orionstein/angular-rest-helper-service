@@ -1,0 +1,13 @@
+{
+  "name": "angular-rest-helper-service",
+  "version": "0.0.1",
+  "description": "Angular Rest Helper Service",
+  "main": "dist/angular-rest-helper.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

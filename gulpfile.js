@@ -29,7 +29,11 @@ gulp.task('build', function(){
   .pipe(angularFileSort())
   .pipe(concat('angular-rest-helper.js'))
   .pipe(gulp.dest('dist/'))
-  .pipe(uglify())
+  .pipe(uglify({
+    compress: {
+      drop_console: true
+    }
+  }))
   .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('dist/'));
 });
