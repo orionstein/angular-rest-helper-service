@@ -1,8 +1,8 @@
 {
-  "name": "startingpoints-lib-services",
-  "version": "0.1.1",
+  "name": "angular-rest-helper",
+  "version": "0.0.3",
   "description": "StartingPoints Services Library",
-  "main": "Gulpfile.js",
+  "main": "dist/angular-rest-helper.min.js",
   "dependencies": {
     "bower": "^1.4.1",
     "del": "^1.1.1",
@@ -18,11 +18,5 @@
   "devDependencies": {},
   "scripts": {
     "test": "gulp test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:startingpoints-core/startingpoints-lib-services.git"
-  },
-  "author": "Kyle Althoff",
-  "license": "ISC"
+  }
 }
