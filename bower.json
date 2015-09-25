@@ -1,8 +1,15 @@
 {
-  "name": "angular-rest-helper-service",
-  "version": "0.0.4",
+  "name": "of-angular-rest-helper",
+  "version": "0.0.5",
   "description": "Angular Rest Helper Service",
   "main": "dist/angular-rest-helper.min.js",
+  "keywords": ["angular","rest"],
+  "author": "Orion Free <ofree@upperquadrant.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orionstein/angular-rest-helper-service"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

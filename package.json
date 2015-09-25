@@ -1,7 +1,7 @@
 {
-  "name": "angular-rest-helper",
-  "version": "0.0.4",
-  "description": "StartingPoints Services Library",
+  "name": "of-angular-rest-helper",
+  "version": "0.0.5",
+  "description": "Angular Rest Helper Service",
   "main": "dist/angular-rest-helper.min.js",
   "dependencies": {
     "bower": "^1.4.1",
