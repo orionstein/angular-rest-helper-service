@@ -1,11 +1,16 @@
 # angular-rest-helper-service
-###Rest helper for Angular, to help work with Express and :notated APIs in a more sensible way
 
-Include angular-rest-helper-service/dist/angular-rest-helper.js or angular-rest-helper.min.js
+#### What is it?
+angular-rest-helper-service is a Rest helper for Angular, to help work with Express and :notated APIs in a more sensible way.
+It allows you to store and format your endpoints as they appear in backend route definitions, and populate the route params with JSON.
 
-Include angularRestHelper module on Angular App load, and call APIService to make calls.
+#### Configuration
+Include 
+**bower_components/angular-rest-helper-service/dist/angular-rest-helper.min.js**
 
-Call APIServiceProvider in app config, and set
+Include **angularRestHelper** module in your Angular App, and inject APIService to make calls.
+
+Call **APIServiceProvider** in app config, and set
 ```
 APIServiceProvider.apiUrl = 'https://APIBASEURL';
 ```
@@ -15,9 +20,11 @@ and if you are using hapi
 APIServiceProvider.formatter = 'hapi';
 ```
 
+#### How to use
+
 To make calls with this library, you can make calls in two ways.
 
-Either through a single object, that contains an endpoint object, the body, and the params -
+Either through a single object, that contains an endpoint object, body object, params object, and headers object -
   ```
   var getUser = {
     endpoint: {
@@ -26,6 +33,9 @@ Either through a single object, that contains an endpoint object, the body, and 
     },
     params: {
       id: idVar
+    },
+    headers: {
+      Authorization: "bearer " + token
     }
   }
 
@@ -33,7 +43,7 @@ Either through a single object, that contains an endpoint object, the body, and 
   .then(function(user){ return user });
   ```
 
-Or through multiple arguments, in the order of endpoint -> body -> params. If the request is a head or get request, the second argument will be used to populate the route params.
+Or through multiple arguments, in the order of APIService(endpoint, body, params, headers). If the request is a head or get request, the second argument will be used to populate the route params.
 ```
   var updateUserEndpoint = {
     path: '/user/:id',
@@ -70,4 +80,5 @@ userService.updateUser(user.id, user)
 .then(function(updatedUser){ scope.user = updatedUser) });
 ```
 
-TLDR; Routes can be written and referenced in the service exactly to API specifications, including route params, and be populated by the service.
+#### To Do
+Add support for multiple API endpoints within the same App. Currently, only one API endpoint config can be active.
