@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/orionstein/angular-rest-helper-service"
   },
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-mocks": "~1.4.7"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

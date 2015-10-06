@@ -8,6 +8,14 @@ var concat = require('gulp-concat');
 var angularFileSort = require('gulp-angular-filesort');
 var preprocess = require('gulp-preprocess');
 var del = require('del');
+var Server = require('karma').Server;
+
+gulp.task('test', function(done){
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
 
 gulp.task('clean', function(cb){
   return del('dist/', cb);
