@@ -4,4 +4,6 @@ node_js:
   - "4.0"
 before_script:
   - npm install -g gulp
+  - npm install -g bower
+  - bower install --allow-root
 script: gulp test
