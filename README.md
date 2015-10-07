@@ -1,4 +1,5 @@
 # angular-rest-helper-service
+[![Build Status](https://travis-ci.org/orionstein/angular-rest-helper-service.svg?branch=master)](https://travis-ci.org/orionstein/angular-rest-helper-service)
 
 #### What is it?
 angular-rest-helper-service is a Rest helper for Angular, to help work with Express and :notated APIs in a more sensible way.
