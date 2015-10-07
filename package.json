@@ -18,6 +18,7 @@
     "gulp-uglify": "^1.2.0",
     "karma": "*",
     "karma-mocha": "*",
+    "karma-mocha-reporter": "*",
     "karma-phantomjs-launcher": "*",
     "karma-chai": "*",
     "mocha": "*",
