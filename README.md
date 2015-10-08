@@ -6,6 +6,8 @@ angular-rest-helper is a Rest helper for Angular, to help work with Express and 
 It allows you to store and format your endpoints as they appear in backend route definitions, and populate the route params with JSON.
 
 #### Configuration
+Add 'of-angular-rest-helper' to bower dependencies
+
 Include 
 **bower_components/angular-rest-helper-service/dist/angular-rest-helper.min.js**
 
