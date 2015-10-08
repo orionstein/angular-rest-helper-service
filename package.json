@@ -1,10 +1,12 @@
 {
   "name": "of-angular-rest-helper",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Angular Rest Helper Service",
   "main": "dist/angular-rest-helper.min.js",
   "author": "Orion Free <ofree@upperquadrant.com",
   "dependencies": {
+    "angular": "*",
+    "angular-mocks": "*",
     "bower": "^1.4.1",
     "chai": "*",
     "del": "^1.1.1",
