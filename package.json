@@ -1,6 +1,6 @@
 {
   "name": "of-angular-rest-helper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Angular Rest Helper Service",
   "main": "dist/angular-rest-helper.min.js",
   "author": "Orion Free <ofree@upperquadrant.com",

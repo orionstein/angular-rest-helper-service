@@ -1,6 +1,6 @@
 {
   "name": "of-angular-rest-helper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Angular Rest Helper Service",
   "main": "dist/angular-rest-helper.min.js",
   "keywords": ["angular","rest"],
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/orionstein/angular-rest-helper-service"
   },
-  "dependencies": {
+  "devDependencies": {
     "angular": "~1.4.7",
     "angular-mocks": "~1.4.7"
   },
