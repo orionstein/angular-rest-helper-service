@@ -4,12 +4,12 @@ BUILD_DIR := dist
 all: 
 
 build:
-	sudo docker build -t $(LIB_NAME) --rm=true .
-	sudo docker run -it -d --name $(LIB_NAME)-run $(LIB_NAME) gulp
-	sudo rm -rf ./$(BUILD_DIR)
-	sudo docker cp $(LIB_NAME)-run:/usr/src/app/$(BUILD_DIR) .
-	sudo docker stop $(LIB_NAME)-run
-	sudo docker rm $(LIB_NAME)-run
+	docker build -t $(LIB_NAME) --rm=true .
+	docker run -it -d --name $(LIB_NAME)-run $(LIB_NAME) gulp
+	rm -rf ./$(BUILD_DIR)
+	docker cp $(LIB_NAME)-run:/usr/src/app/$(BUILD_DIR) .
+	docker stop $(LIB_NAME)-run
+	docker rm $(LIB_NAME)-run
 
 init:
 	sudo docker build -t $(LIB_NAME) --rm=true .

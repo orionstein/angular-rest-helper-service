@@ -7,8 +7,6 @@ RUN mkdir /opt/build
 
 RUN ls /opt/build
 
-RUN bower install --allow-root
-
 RUN gulp
 
 
