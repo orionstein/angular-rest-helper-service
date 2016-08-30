@@ -23,7 +23,6 @@
     "angular": "^1.5.0",
     "angular-mocks": "^1.5.0",
     "chai": "^3.5.0",
-    "gulp-karma": "^0.0.5",
     "karma": "^1.2.0",
     "karma-chai": "^0.1.0",
     "karma-mocha": "^1.1.1",
